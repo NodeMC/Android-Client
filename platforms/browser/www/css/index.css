@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+    font-size: 20px;
+}
+
+.server-input {
+    width: 80%;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.long{
+    width: 100%;
+}
+
+.console{
+    width:100%;
+}
