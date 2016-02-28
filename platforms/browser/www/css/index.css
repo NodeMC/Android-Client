@@ -12,10 +12,24 @@
     transform: translate(-50%, -50%);
 }
 
-.long{
+.long {
     width: 100%;
 }
 
-.console{
-    width:100%;
+.console {
+    width: 100%;
+    font-size: 12px;
+    height: 100%;
+    padding: 3px;
+}
+
+.command {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.addnew-btn{
+    color: white;
+    font-weight: 700;
 }

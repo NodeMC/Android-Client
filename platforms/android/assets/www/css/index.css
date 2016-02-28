@@ -18,4 +18,12 @@
 
 .console{
     width:100%;
+    font-size: 12px;
+    height: 100%;
+    padding: 3px;
+}
+.command {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

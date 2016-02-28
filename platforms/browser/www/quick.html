@@ -24,12 +24,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Console</a>
+                    <a class="navbar-brand" href="#">Quick Controls</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse nv">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Console</a></li>
-                        <li><a href="quick.html">Quick Controls</a></li>
+                        <li><a href="index.html">Console</a></li>
+                        <li class="active"><a href="quick.html">Quick Controls</a></li>
                         <li><a href="#">Files</a></li>
                     </ul>
                 </div>
@@ -42,30 +42,50 @@
             <p class="event listening">r</p>
             <p class="event received"></p>
             <!-- ./ -->
-            <div class="console">
-                <textarea class="console" rows="20" id="console-area"></textarea>
-            </div>
-            <div class="command">
-                <center>
-                    <form enctype="text/plain">
-                        <fieldset class="form-group">
-                        </fieldset>
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Execute</button>
-                            </span>
-                            <input type="text" class="form-control" id="command" name="Body" placeholder="command">
-                        </div>
-                    </form>
-                </center>
-            </div>
+            <h4><a href="#" class="addnew-btn" data-toggle="modal" data-target="#addmodal">Add new <b>+</b></a></h4>
+            <hr />
+            <h5>Power control</h5>
+            <a href="#" id="stop" class="btn btn-danger">Stop</a>
+            <a href="#" id="restart" class="btn btn-danger">Restart</a>
+            <a href="#" id="start" class="btn btn-success">Start</a>
+            <br />
         </div>
     </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="addmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add new quick control</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="command">Command to execute</label>
+                            <input type="text" class="form-control" id="command" placeholder="Command">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/quickcontrols.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/console.js"></script>
     <script>
         app.initialize();
     </script>
